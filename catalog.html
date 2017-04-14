@@ -8,7 +8,9 @@
     <header class="main-header">
       <div class="container">
         <div class="header-logo">
-          <img src="" alt="Barbershop">
+          <a href="index.html">
+            <img src="" alt="Barbershop">
+          </a>
         </div>
         <nav class="main-navigation">
           <ul>
@@ -36,50 +38,41 @@
         </ul>
       </nav>
 
-      <form action="#">
-        <section class="brands">
-          <h2>Производители:</h2>
-          <label>
-            <input type="checkbox" checked>
-            Baxter of California
-          </label>
-          <label>
-            <input type="checkbox">
-            Mr Natty
-          </label>
-          <label>
-            <input type="checkbox" checked>
-            Suavecito
-          </label>
-          <label>
-            <input type="checkbox">
-            Malin+Goetz
-          </label>
-          <label>
-            <input type="checkbox">
-            Murray's
-          </label>
-          <label>
-            <input type="checkbox" checked>
-            American Crew
-          </label>
-        </section>
+      <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="brands">
+          <legend>Производители:</legend>
 
-        <section class="product-groups">
-          <h2>Группы товаров:</h2>
-          <label>
-            <input type="radio" name="category" value="shaving-stuff">
-            Бритвенные принадлежности
-          </label>
-          <label>
-            <input type="radio" name="category" value="products-care" checked>
-            Средства для ухода
-          </label>
-          <label>
-            <input type="radio" name="category" value="accessories">
-            Аксессуары
-          </label>
-        </section>
+          <input id="brand-baxter" type="checkbox" checked>
+          <label for="brand-boc">Baxter of California</label>
+
+          <input id="brand-mrnatty" type="checkbox">
+          <label for="brand-mrnatty">Mr Natty</label>
+
+          <input id="brand-suavecito" type="checkbox" checked>
+          <label for="brand-suavecito">Suavecito</label>
+
+          <input id="brand-malingoetz" type="checkbox">
+          <label>Malin+Goetz</label>
+
+          <input id="brand-murrays" type="checkbox">
+          <label for="brand-murrays">Murray's</label>
+
+          <input id="brand-crew" type="checkbox" checked>
+          <label for="brand-crew">American Crew</label>
+        </fieldset>
+
+        <fieldset class="product-groups">
+          <legend>Группы товаров:</legend>
+
+          <input id="shaving-stuff" type="radio" name="category" value="shaving-stuff">
+          <label for="shaving-stuff">Бритвенные принадлежности</label>
+
+          <input id="products-care" type="radio" name="category" value="products-care" checked>
+          <label for="products-care">Средства для ухода</label>
+
+          <input id="accessories" type="radio" name="category" value="accessories">
+          <label for="accessories">Аксессуары</label>
+        </fieldset>
 
         <button class="btn" type="submit">Показать</button>
       </form>
@@ -87,55 +80,55 @@
       <section class="catalog">
         <article class="catalog-item">
           <img src="http://placehold.it/150x100" alt="Набор средств для ухода за волосами">
-          <p>
+          <h2>
             Набор для путешествий <br>
             «<span class="item-brand">Baxter of California</span>»
-          </p>
+          </h2>
           <span class="item-price">2 900 Руб.</span>
           <a href="#" class="btn">Купить</a>
         </article>
         <article class="catalog-item">
           <img src="http://placehold.it/150x100" alt="Сине-белая бутылка с черным краном">
-          <p>
+          <h2>
             Увлажняющий кондиционер <br>
             «<span class="item-brand">Baxter of California</span>»
-          </p>
+          </h2>
           <span class="item-price">750 Руб.</span>
           <a href="#" class="btn">Купить</a>
         </article>
         <article class="catalog-item">
           <img src="http://placehold.it/150x100" alt="Открытая банка с крыжкой на боку с надписью 'Suavecito'">
-          <p>
+          <h2>
             Гель для волос <br>
             «<span class="item-brand">Suavecito</span>»
-          </p>
+          </h2>
           <span class="item-price">290 Руб.</span>
           <a href="#" class="btn">Купить</a>
         </article>
         <article class="catalog-item">
           <img src="http://placehold.it/150x100" alt="Банка каричневого цвета">
-          <p>
+          <h2>
             Глина для укладки волос <br>
             «<span class="item-brand">American Crew</span>»
-          </p>
+          </h2>
           <span class="item-price">500 Руб.</span>
           <a href="#" class="btn">Купить</a>
         </article>
         <article class="catalog-item">
           <img src="http://placehold.it/150x100" alt="Тёмно-бежевый тюбик с надписью Crew">
-          <p>
+          <h2>
             Гель для волос <br>
             «<span class="item-brand">American Crew</span>»
-          </p>
+          </h2>
           <span class="item-price">300 Руб.</span>
           <a href="#" class="btn">Купить</a>
         </article>
         <article class="catalog-item">
           <img src="http://placehold.it/150x100" alt="Набор из кисточки, белого тюбика и белой банки">
-          <p>
+          <h2>
             Набор для бритья <br>
             «<span class="item-brand">Baxter of California</span>»
-          </p>
+          </h2>
           <span class="item-price">3 900 Руб.</span>
           <a href="#" class="btn">Купить</a>
         </article>
